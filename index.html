@@ -395,6 +395,57 @@
 
 
    <!-- Testimonial Start -->
+<!-- <div class="container-fluid py-5">
+    <div class="container p-0">
+        <div class="text-center pb-2">
+            <p class="section-title px-5"><span class="px-2">Testimonial</span></p>
+            <h1 class="mb-4">What Parents Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item px-3">
+                <div class="bg-light shadow-sm rounded mb-4 p-4">
+                    <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                    "Ishimwe Gisubizo Patrick's dedication to the students and innovative approach in IT teaching have made a remarkable difference in our child’s education. His ability to explain complex concepts in simple terms is truly commendable."
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle" src="img/testimonial-1.jpg" style="width: 70px; height: 70px;" alt="Image">
+                    <div class="pl-3">
+                        <h5>Ishimwe Gisubizo Patrick</h5>
+                        <i>IT Manager, ES Rubengera</i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item px-3">
+                <div class="bg-light shadow-sm rounded mb-4 p-4">
+                    <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                    "Ange has been an incredible influence on our child's personal growth. Her insightful guidance and ability to connect with students are truly outstanding. Our child is now more confident and motivated to excel."
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle" src="img/Yego_office.jpeg" style="width: 70px; height: 70px;" alt="Image">
+                    <div class="pl-3">
+                        <h5>Ange</h5>
+                        <i>Professional Educator</i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item px-3">
+                <div class="bg-light shadow-sm rounded mb-4 p-4">
+                    <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                    "Gerard's support in academic growth and character development has been invaluable. His thoughtful approach and consistent encouragement have inspired our child to pursue their studies with great enthusiasm."
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle" src="img/Yego_house.jpeg" style="width: 70px; height: 70px;" alt="Image">
+                    <div class="pl-3">
+                        <h5>Gerard</h5>
+                        <i>Professional Educator</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Testimonial End -->
+    <!-- Testimonial Start -->
 <div class="container-fluid py-5">
     <div class="container p-0">
         <div class="text-center pb-2">
@@ -445,6 +496,35 @@
     </div>
 </div>
 <!-- Testimonial End -->
+
+<!-- Include jQuery (necessary for Owl Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Initialize Owl Carousel -->
+<script>
+    $(document).ready(function(){
+        $(".testimonial-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+
 
     <!-- News Start -->
 <div class="container-fluid pt-5">
@@ -527,7 +607,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                
+                <h2 class="text-primary mb-4">Get In Touch</h2>
                 <div class="d-flex">
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
@@ -536,7 +616,7 @@
                     </div>
                 </div>
                 <div class="d-flex">
-                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    
                     <h4 class="fa fa-envelope text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Email</h5>
