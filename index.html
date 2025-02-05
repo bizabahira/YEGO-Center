@@ -7,6 +7,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -105,6 +111,7 @@
                         <p class="m-0">Access free computers and receive guidance and training from experts.</p>
                        <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#bookingModal">Book Now</button>
 
+
                     </div>
                 </div>
             </div>
@@ -115,7 +122,8 @@
                     <div class="pl-4">
                         <h4>Agati Library</h4>
                         <p class="m-0">Read different books for free with guidance from a librarian.</p>
-                        <button class="btn btn-primary mt-2">Book Now</button>
+                       <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
                     </div>
                 </div>
             </div>
@@ -126,7 +134,8 @@
                     <div class="pl-4">
                         <h4>Health Center</h4>
                         <p class="m-0">Get free medical advice and support from a professional doctor.</p>
-                       <a href="book_service.html"><button class="btn btn-primary mt-2">Book Now</button></a>
+                      <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
                     </div>
                 </div>
             </div>
@@ -137,7 +146,8 @@
                     <div class="pl-4">
                         <h4>Playground & Sports</h4>
                         <p class="m-0">Enjoy a space for entertainment, games, and physical activities.</p>
-                        <button class="btn btn-primary mt-2">Book Now</button>
+                       <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
                     </div>
                 </div>
             </div>
@@ -148,7 +158,8 @@
                     <div class="pl-4">
                         <h4>Talent Development</h4>
                         <p class="m-0">Boost your talent in singing, acting, and other creative skills for free.</p>
-                        <button class="btn btn-primary mt-2">Book Now</button>
+                       <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
                     </div>
                 </div>
             </div>
@@ -159,7 +170,8 @@
                     <div class="pl-4">
                         <h4>Youth Volunteers</h4>
                         <p class="m-0">Engage in community service and volunteer activities to give back.</p>
-                        <button class="btn btn-primary mt-2">Join Now</button>
+                      <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
                     </div>
                 </div>
             </div>
@@ -652,6 +664,51 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book a Service</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Select Service</label>
+            <select class="form-control" id="service" required>
+              <option value="">-- Select a Service --</option>
+              <option value="IT Support">IT Support</option>
+              <option value="Business Registration">Business Registration</option>
+              <option value="Training & Workshops">Training & Workshops</option>
+              <option value="Consultation">Consultation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
     <!-- JavaScript Libraries -->
